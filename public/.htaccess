@@ -1,0 +1,18 @@
+# desactiva las multivistas
+
+Options -Multiviews
+RewriteEngine On
+
+# RewriteBase /home2/bytetics/public_html/
+
+# Condicion de escritura
+RewriteCond %{REQUEST_FILENAME} !-d 
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+
+
+RewriteCond %{HTTP_HOST} ^bytetics\.com\.mx$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.bytetics\.com\.mx$
+RewriteRule ^/?$ "https\:\/\/bytetics\.com\.mx\/inicio\/" [R=301,L]
+

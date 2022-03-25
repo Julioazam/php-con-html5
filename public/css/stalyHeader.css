@@ -1,0 +1,363 @@
+/* -----------------------------------
+---------------- Basico --------------*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #212121;
+    font-family: Raleway Light;
+    height: 100%;
+}
+
+ul,
+li {
+    text-decoration: none;
+    display: block;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    transition: 0.5s;
+    text-decoration: none;
+    transition: all 0.3s ease 0s;
+}
+
+a:hovera,
+a:active,
+a:focus{
+    color: #72dbed;
+    outline: none;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 15px 0;
+    color: #212121;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Raleway Medium;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 50px;
+}
+
+h2 {
+    font-size: 38px;
+    line-height: 40px;
+}
+
+h3 {
+    font-size: 30px;
+    line-height: 32px;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 26px;
+}
+
+h5 {
+    font-size: 20px;
+    line-height: 22px;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+
+/*-------------------------
+-------------Scrollbar------**/
+
+.scroll::-webkit-scrollbar {
+    width: 19px;
+    background: #ffffff;
+
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background: #194052;
+    border-radius: 0px 100px 0px 100px;
+}
+
+/* Cambiamos el fondo y agregamos una sombra cuando esté en hover */
+.scroll::-webkit-scrollbar-thumb:hover {
+    background: #72dbed;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Cambiamos el fondo cuando esté en active */
+.scroll::-webkit-scrollbar-thumb:active {
+    background-color: #194052;
+}
+
+
+
+/*--------------------------------------------------------------
+# Header nav
+--------------------------------------------------------------*/
+#header {
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 70px;
+    background: #fff;
+    z-index: 500;
+    position: fixed;
+    border-radius: 0 0 5% 5%;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, .6);
+
+}
+
+#header nav {
+    margin: 30px auto;
+    padding: 0px;
+    list-style: none;
+    height: 87px;   /*Alto*/
+    max-width: 80%; /*Ancho*/
+    background: #194052;
+    border-radius: 5px 25%;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, .9);
+}
+
+
+/* Boton menu */
+.menu_bar {
+    display: none;
+}
+
+.logo-nav img {
+    width: 120px;
+    height: auto;
+    top: 100px;
+}
+
+.logo-nav img:hover {
+    filter: saturate(200%);
+}
+
+.nav ul li {
+    position: relative;
+    float: left;
+    display: block;
+    margin: 25px 1px 0 8px;
+    white-space: nowrap;
+
+}
+
+.nav a {
+    margin-left: 20px;
+    margin-top: -8px;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    color: #fff;
+    transition: 0.9s;
+    font-family: Raleway Medium;
+    font-size: 20px;
+
+}
+
+.nav ul li a:hover,
+span:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.5s;
+    color: #fff;
+
+}
+
+#header nav ul li a span{
+    margin-right: 10px;
+}
+
+#header nav ul li:hover .submenu{
+    display: block;
+}
+
+#header nav ul li .submenu{
+    border-radius: 5px 25%;
+    transition: 5s;
+    box-shadow: 6px 6px 16px 1px #212121;
+    display:none;
+    background: #194052;
+    position: absolute;
+    width: 240px;
+    height: 205px;
+    z-index: 1000;
+}
+
+#header nav ul li .submenu li{
+    display: block;
+}
+
+
+/* -------------------------------------------
+-------------------------------------------- */
+
+/* Mobile Navigation -----------
+-------------------------------*/
+@media (min-width: 300px) and (max-width: 700px) {
+    #header .nav {
+        width: 50%;
+        height: 1100% !important;
+    }
+
+    #header .nav ul li {
+        margin: 20px;
+    }
+
+    #header .nav a {
+        padding-top: 10px;
+        font-size: 15px;
+    }
+
+    .nav span {
+        margin-left: 50%;
+    }
+
+    .logo-nav {
+        width: 100px;
+        height: 70px;
+    }
+}
+
+@media (max-width:1024px) {
+
+    #header nav {
+        width: 25%;
+        height: 1500%;
+        left:-100%;
+        /*position:fixed;*/
+        margin: 0;
+        background: #194052;
+        border-radius: 0 25% 25% 0%;
+        box-shadow: 5px 0px 20px 0px rgba(17, 137, 161, 50);
+    }
+
+    .nav {
+        top: 0px;
+        position: absolute;
+    }
+
+    .nav ul li {
+        display: block;
+        float: none;
+        margin: 20px;
+        white-space: nowrap;
+    }
+
+    .nav a {
+        padding-top: 10px;
+        font-size: 17px;
+    }
+
+    .nav span {
+        margin-left: 10%;
+    }
+
+    .menu_bar {
+        display: block;
+        width: 100%;
+        background: #ccc;
+    }
+
+    .menu_bar .bt-menu {
+        display: block;
+        padding: 20px;
+        background: #194052;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 25px;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+
+    .menu_bar span {
+        float: right;
+        font-size: 40px;
+    }
+}
+
+
+
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+}
+
+#preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid #f2f2f2;
+    border-top: 6px solid #1bb1dc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+}
+
+@-webkit-keyframes animate-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate-preloader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

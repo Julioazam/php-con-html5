@@ -1,0 +1,269 @@
+ /*----------------------------------------*/
+
+/*  1. Footer Area
+    2. Redes sociales
+/*----------------------------------------*/
+
+.footer-area {
+    padding: 40px 0 0 0;
+    background: #fff;
+}
+
+
+/* ------- Redes Sociales ------------- */
+
+.footer-content {
+    display: block;
+    overflow: hidden;
+
+}
+
+
+.footer-icons {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.footer-icons ul li {
+    display: inline-block;
+}
+
+
+
+.footer-icons ul li a {
+    border: 1px solid #444;/*solid*/
+    color: #212121;
+    display: block;
+    font-size: 16px;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    margin-right: 5px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.footer-icons ul li a:hover {
+   -webkit-transform: scale(.9);
+    transform: scale(.9);
+    transition: all 0.9s;
+}
+
+.icons-facebook :hover {
+    background: rgb(59, 89, 152);
+    /*#3b5998*/
+    color: #fff;
+}
+
+.icons-twitter :hover {
+    background: rgb(0, 172, 238);
+    /*00acee */
+    color: #fff;
+}
+
+.icons-google :hover {
+    background: #fff;
+    /*00acee */
+    color: rgb(244, 160, 0);
+    /*00acee */
+}
+
+.icons-pinterest :hover {
+    background: rgb(200, 35, 44);
+    /*00acee */
+    color: #fff;
+}
+
+.icons-youtube :hover {
+    background: rgb(196, 48, 43);
+    /*0e76a8 */
+    color: #fff;
+}
+
+.icons-instagram :hover {
+    background: rgb(138, 58, 185);
+    /*fbad50  1bb1dc */
+    color: #fff;
+
+}
+
+
+
+/* ------- Logo -------- */
+.footer-logo {
+    padding: 5px;
+    display: block;
+    margin: 0 auto 15px;
+    /* margin-left: 40px; */
+    height: 200px;
+    width: 200px;
+    
+}
+
+.footer-logo img:hover {
+    cursor: pointer;
+    filter: saturate(200%);
+    
+}
+
+
+
+/* ------- Informacion -------- */
+
+
+.footer-head h4 {
+    color: #212121;
+    font-size: 22px;
+    letter-spacing: 2px;
+    padding-bottom: 10px; 
+    text-align: center;
+    font-weight: 600; /*Negrita*/
+    padding-top: 30px;
+}
+.footer-contacts p{
+    font-size: 14px;
+    text-align: justify;
+    font-weight: 700;
+    color:#212121;
+    padding-left: 70px;
+}
+.footer-contacts p span {
+    color: #212121;
+    font-weight: 700; /*Negrita*/
+    font-size: 20px;
+}
+
+.footer-contacts p a:hover{
+    cursor: pointer;
+  font-size: 18px;
+  transition: 1.5s;
+  color: #212121;
+  font-weight: 700;
+
+
+}
+
+
+
+/* ----- Intagram *----- /
+.flicker-img>a {
+    float: left;
+    padding: 3px;
+    width: 33.33%;
+    overflow: hidden;    
+    filter: saturate(130%);
+}
+.flicker-img a img:hover{
+    transition: all 1s;
+    border-radius: 10%;
+    
+}
+*/
+
+ /* Derechos Reservados */
+.footer-area-derechos {
+    background: #cc343f none repeat scroll 0 0;
+    padding: 15px 0;
+}
+
+.copyright>p , div{
+    margin-bottom: 0;
+    color: #fff;
+    font-size: 15px;
+}
+
+.creditos {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.creditos a {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+
+/******Botón Whatsapp*****/
+
+.container-redes{
+    position: fixed;
+    bottom: 10px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 999;
+}
+
+
+
+.container-redes i{
+    width: 52px;
+    padding: 5.5px;
+    background: #cc343f;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 300ms;
+}
+
+.container-redes a:hover i{
+    text-decoration: none;
+    color: #fff;
+    background: #eb636b;
+    /*00bb2d*/
+}
+
+
+/*****Botón messenger*******/
+
+
+
+.chat-container{
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    max-width: 250px;
+    height: auto;
+    /*position: fixed;*/
+    bottom: 25px;
+    right: 70px;
+    z-index: 999;
+}
+
+
+.chat{
+    width: 100%;
+    margin: 0;
+    cursor: pointer;
+    user-select: none;
+    padding: 0;
+    /*background-color: #cc343f;*/
+    text-align: center;
+    color:#fff;
+    border-radius: 20px;
+
+}
+
+
+.chat-container h4.chek-title a,
+.chat-container h4.chek-title {
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 0;
+  color: #cc343f;
+}
+
+.chat-container .chat :hover,
+  .chat a:active{
+  color: #eb636b;
+  /*background: #0084ff;*/
+  border-radius: 20px;
+}
+
+
+
+
+

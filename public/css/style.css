@@ -1,0 +1,813 @@
+
+
+/*-----------------------------------------------------------------------------------
+   CSS INDEX
+  ===================
+
+  1. Theme Default CSS (body, link color, section etc)
+  2. Contacto 
+  3. About area Quienes somos
+  4 Frase del día
+  5. Area de nuestros servicios
+  6. Community Manager
+  7. Cómo iniciar unproyecto
+  8.Tablas
+-----------------------------------------------------------------------------------*/
+
+
+/*----------------------------------------*/
+/*  1.  Theme default CSS
+/*----------------------------------------*/
+
+
+.floatleft {
+    float: left;
+}
+
+.floatright {
+    float: right;
+}
+
+.alignleft {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.alignright {
+    float: right;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+
+
+
+.fix {
+    overflow: hidden;
+}
+
+.clear {
+    clear: both;
+}
+
+
+
+::-moz-selection {
+    background: #72dbed;
+    text-shadow: none;
+}
+
+::selection {
+    background: #72dbed;
+    text-shadow: none;
+}
+
+.area-padding {
+    padding: 70px 0px 80px;
+}
+
+.area-padding-2 {
+    padding: 70px 0px 50px;
+}
+
+.padding-2 {
+    padding-bottom: 90px;
+}
+
+.section-titulo {
+    text-align: center;
+    top: 0;
+}
+
+.section-titulo h2 {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 70px;
+    position: relative;
+    color: #212121;
+    /*text-shadow: 4px 2px 3px #72dbed;*/
+    text-align: center;
+}
+
+.section-titulo h2::after {
+    border: 2px solid #194052;
+    bottom: -20px;
+    content: "";
+    left: 0;
+    margin: 10px auto;
+    position: absolute;
+    right: 0;
+    width: 50%;
+
+}
+
+.section-titulo-slider h2 {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 70px;
+    position: relative;
+    text-transform: capitalize;
+    color: #fff;
+    text-align: center;
+
+}
+
+.section-titulo-slider h2::after {
+    border: 2px solid #194052;
+    bottom: -20px;
+    content: "";
+    left: 0;
+    margin: 10px auto;
+    position: absolute;
+    right: 0;
+    width: 50%;
+
+}
+
+.sec-head {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding: 0 0 10px;
+    text-transform: uppercase;
+    transition: all 0.4s ease 0s;
+}
+
+/*---------Index---------------------
+  2. Contacto
+--------------------------------*/
+#contacto {
+    top: 0;
+    background: #212121;
+}
+
+.contacto-area {
+    border-right: 5px solid #fff;
+}
+
+.contacto-texto {
+    text-align: center;
+
+}
+
+.contacto-texto h4 {
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: Raleway Medium;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.contacto-texto a,
+span {
+    font-size: 17px;
+    font-family: Raleway Light;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: 1s;
+    font-weight: 500;
+}
+
+.contacto-texto a:hover {
+    cursor: pointer;
+    font-size: 19px;
+    color: #72dbed;
+    text-shadow: .5px .2px .9px #ffffff;
+
+}
+/*------------------------------
+  3. About Area Quienes somos
+--------------------------------*/
+
+.about-area {
+    /* background-color: #f9f9f9; */
+    padding-top: 40px;
+    background: url('../img/') right 0px top 0px no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    position: relative;
+    -webkit-animation-name: izquierda;
+    -webkit-animation-duration: 4s;
+    animation-name: izquierda;
+    animation-duration: 4s;
+}
+
+
+@-webkit-keyframes izquierda {
+    50% {
+        left: 700px;
+        right: 0px;
+    }
+
+    100% {
+        left: 0px;
+        right: 500px;
+    }
+}
+
+/* Standard syntax */
+@keyframes izquierda {
+    50% {
+        left: 700px;
+        right: 0px;
+    }
+
+    100% {
+        left: 0px;
+        right: 500px;
+    }
+}
+
+.img-about img {
+    top: 0;
+    left: 0;
+    padding: 15px;
+    border-radius: 30px 30px;
+    transition: 5s;
+    color: #194052;
+    box-shadow: 15px 0px 0 5px;
+
+}
+
+.texto-well {
+    padding: 5px;
+    /* border: 10px double #194052; */
+    border-radius: 10px;
+    /* background-color: rgba(15, 60, 75, 1); */
+
+}
+
+.texto-well h4 {
+    top: 10%;
+    font-size: 22px;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase color: #212121;
+    /*text-shadow: 4px 2px 3px #72dbed;*/
+}
+
+.texto-well a h4{
+color: #212121;
+}
+
+.texto-well p {
+    margin: 20px;
+    color: #212121;
+    font-size: 18px;
+    font-family: Raleway Light;
+    font-weight: 600;
+    text-align: justify;
+}
+
+/*----------------------------------------
+ 4. Frase del Dia
+----------------------------------------*/
+
+.testimonials-area {
+    background: rgba(0, 0, 0) url("../img/index/2.jpg") no-repeat fixed center top / cover;
+    height: auto;
+    width: 100%;
+}
+
+.testi-inner {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.testi-overly {
+    background: rgba(33, 33, 33, .7) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.quate {
+    border: 2px double #fff;
+    background: #194052;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-block;
+    font-size: 24px;
+    height: 70px;
+    line-height: 70px;
+    width: 70px;
+}
+
+
+.testi-img img {
+    border: 1px dotted rgba(0, 0, 0, 0.05);
+    border-radius: 2px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 5px;
+    transition: background 0.6s ease-out 0s;
+    width: 80px !important;
+}
+
+.testi-text p {
+    color: #fff;
+    font-family: Raleway Light italic;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+.testi-text h6 {
+    color: #fff;
+    font-family: Raleway Light;
+    font-size: 20px;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot>span {
+    background: #fff none repeat scroll 0 0;
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    -moz-transition: 10s;
+    -webkit-transition: 10s;
+    -o-transition: 10s;
+    -ms-transition: 10s;
+    transition: 10s;
+    border-radius: 50%;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots {
+    bottom: 20px;
+    display: block;
+    left: 50%;
+    margin-left: -20px;
+    position: absolute;
+}
+
+.testimonial-content {
+    margin-bottom: 150px;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot {
+    display: inline-block;
+    margin: 0 3px;
+}
+
+.testimonial-carousel.owl-carousel.owl-theme .owl-controls .owl-dots div.owl-dot.active span {
+    background: #72dbed;
+}
+
+.testi-text.text-center>h6 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.guest-rev {
+    color: #ddd;
+    font-size: 16px;
+}
+
+.guest-rev>a {
+    color: #72dbed;
+    font-size: 14px;
+}
+
+
+
+/* ---------------------
+------------ */
+
+
+
+/*----------------------------------------
+ 5.Nuestros Servicios
+----------------------------------------*/
+.portfolio-area {
+    padding-top: 40px;
+    background: url('..') right 0px top 0px no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.single-awesome-project {
+    overflow: hidden;
+}
+
+
+.awesome-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    position: relative;
+    -webkit-animation-name: izquierda;
+    -webkit-animation-duration: 4s;
+    animation-name: izquierda;
+    animation-duration: 4s;
+
+}
+
+.awesome-img>a {
+    display: block;
+    position: relative;
+
+}
+
+.single-awesome-project:hover .awesome-img>a::after {
+    opacity: .7;
+    bottom: 0px;
+}
+
+.single-awesome-project:hover .add-actions {
+    opacity: 1;
+    margin-bottom: -100px;
+    border-radius: 10% 0 10%;
+}
+
+
+.awesome-img>a::after {
+    background: rgb(25, 64, 82) none repeat scroll 0 0;
+    content: "";
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: 4s;
+}
+
+.add-actions {
+    background: rgba(33, 33, 33, 0.9) none repeat scroll 0 0;
+    bottom: 30px;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 10px 15px;
+    position: absolute;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+}
+
+.project-dec {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.project-dec a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-align: justify;
+    color: #fff;
+}
+
+.project-dec span {
+    color: #fff;
+    padding: 10px;
+    font-size: 15px;
+    font-family: Raleway;
+}
+
+
+.services-icon {
+    color: #194052;
+    display: inline-block;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.single-services>h4 {
+   /*text-shadow: .5px 2px .9px #000000;*/
+    color: #212121;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: Raleway;
+    /*text-shadow: 2px 2px 10px #72dbed;*/
+
+}
+
+
+
+/* 6. Comunity Manager----------- */
+.testimonials-area2 {
+    background: url("../img/Comunity Manager/1cominity.jpg") no-repeat fixed center top 0px;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+    filter: saturate(150%);
+}
+
+.testi-inner2 {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.testi-overly2 {/*Filtro*/
+    background: rgba(33, 33, 33, .6) none repeat scroll 0 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.testi-img img {
+    border: 5px double rgba(114, 219, 237, 0.5);
+    border-radius: 20px;
+    width: 450px !important;
+    height: 250px;
+    margin: 0 auto;
+    padding: 5px;
+    transition: background 0.6s ease-out 0s;
+
+}
+
+.testi-text p {
+    color: #fff;
+    font-family: Raleway Light italic;
+    font-size: 22px;
+    line-height: 1.5em;
+    margin: 20px 0;
+    letter-spacing: 1px;
+
+}
+
+.testi-text h6 {
+    color: #72dbed;
+    font-family: Raleway Light;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.testi-text.text-center>h6 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+
+
+/*----------------------------------------
+  7.Como Iniciar Un proyecto
+----------------------------------------*/
+
+.tab-menu .nav-tabs>li>a:hover {
+    position: relative;
+    display: block;
+    border-radius: 10px 10px;
+    padding: 5px;
+    color: #194052;
+    box-shadow: 8px 4px 0px 4px;
+    -webkit-box-shadow: -8px 0px 0px 4px;
+}
+
+.tab-menu {
+    display: block;
+    text-align: left;
+}
+
+.tab-menu ul.nav {
+    margin: 0;
+    padding: 0;
+}
+
+.tab-menu ul.nav li {
+    border: dotted none;
+    display: inline-block;
+}
+
+.tab-content {
+    border: 3px solid #194052;
+    border-radius: 5px 10%;
+    padding: 0 15px 15px;
+    text-align: justify;
+    font-weight: 700;
+}
+
+.tab-menu ul.nav li a {
+    background: rgba(0, 0, 0, ) none repeat scroll 0 0;
+    border-radius: 5px 5px 0 0;
+    color: #194052;
+    display: block;
+    font-weight: 500;
+    margin-right: 5px;
+    padding: 10px 20px;
+    font-family: Raleway;
+    font-size: 18px;
+}
+
+.tab-menu ul li.active a,
+.tab-menu ul li.hover a,
+.tab-menu ul li.focus a {
+    border-bottom: 1px solid #194052;
+    color: #72dbed !important;
+}
+
+.tab-menu .nav-tabs {
+    border-bottom: none;
+}
+
+.tab-main-img>img {
+    position: relative;
+    display: block;
+    border-radius: 30px 30px;
+    padding: 15px;
+    color: #194052;
+    box-shadow: 15px 10px 0px 5px;
+    -webkit-box-shadow: -15px 0px 0px 5px;
+}
+
+.tab-main-img a span.events-offer {
+    background: rgba(25, 64, 82, 0.8) none repeat scroll 0 0;
+    bottom: 0;
+    color: #72dbed;
+    content: "";
+    font-size: 20px;
+    font-weight: 700;
+    height: 0%;
+    left: 0;
+    line-height: 70px;
+    padding: 0;
+    position: absolute;
+    text-align: left;
+    transition: all 0.5s ease 0s;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+/*----------------------------------------*/
+
+/* 8. Tablas
+/*----------------------------------------*/
+
+.pricing-area {
+    background: rgba(25, 64, 82, .4);
+}
+
+.section-titulo h4{
+    color: #212121;
+    font-size: 26px;
+} 
+
+.pri_table_list {
+    text-align: center;
+    transition: all 0.4s ease 0s;
+    background: #fff;
+    padding: -40px;
+    border: 1px solid #ccc;
+    color: #fff;
+}
+
+.pri_table_list ul li {
+    border: 1px solid #ccc;
+    color: #666;
+
+}
+
+/*------- Filtro -------*/
+
+.single-awesome-project-list {
+    overflow: hidden;
+}
+
+.first-item {
+    /*margin-bottom: 30px;*/
+    padding: 0px;
+}
+
+.awesome-img-list {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.awesome-img-list>a {
+    display: block;
+    position: relative;
+}
+
+.single-awesome-project-list:hover .awesome-img-list>a::after {
+    opacity: 1;
+    color: #194052;
+}
+
+.single-awesome-project-list:hover .add-actions-list {
+    opacity: 1;
+    bottom: 0;
+}
+
+.awesome-img-list>a::after {
+    background: rgba(0, 0, 0, .3) none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+
+.add-actions-list {
+    background: rgba(33, 33, 33, .3) none repeat scroll 0 0;
+    bottom: 0px;
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    transition: all 0.4s ease 0s;
+    width: 100%;
+}
+
+.project-dec-list {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.project-dec-list a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.project-dec-list a p{
+    font-size: 16px;
+    color: #72dbed;
+     padding-top: 10%;
+}
+
+.project-dec-list h4 {
+    margin-bottom: 5px;
+}
+
+.project-dec-list h4:hover {
+    color: #fff;
+}
+
+.project-dec-list h4 {
+    color: #ddd;
+    font-size: 16px;
+    text-align: center;
+    margin-top: -45px;
+    padding-top: 25%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+
+
+
+/*-------------------*/
+
+
+.pri_table_list>h3 {
+    color: #212121;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 25px;
+    padding: 30px 0 20px;
+    transition: all 0.4s ease 0s;
+
+}
+
+
+.active>h3 {
+    background: #f5f5f5 none repeat scroll 0 0;
+    color: #333;
+    transition: all 0.4s ease 0s;
+
+}
+
+
+/*----------------------------------------
+ .End CSS
+----------------------------------------*/

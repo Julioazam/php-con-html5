@@ -1,0 +1,261 @@
+/*-----------------------------------------------------------------------------------
+   CSS Sobre Nosotros
+  ===================
+
+  1. Nuestra Historia
+  2. Más Información
+  3. Anuncio
+  4. Nuestro equipo
+  5. Lista de servicios
+-----------------------------------------------------------------------------------*/
+
+/*------------------------------
+      1. Nuestra Historia
+--------------------------------*/
+.area-padding-nosotros{
+    padding-top: 15px;
+    background: #194052;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.faq-nosotros h4.check-title a,
+.faq-nosotros h4.check-title {
+  display: block;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 0;
+  color: #194052;
+}
+
+  .faq-nosotros h4.check-title a:hover,
+  a:active{
+  color: #ffffff;
+  background: #72dbed;
+  border-radius: 20px;
+}
+
+.panel {
+    margin-bottom: 15px;
+    background-color: #fff;
+    border-radius: 20px;
+    -webkit-box-shadow: -6px 6px 10px 2px rgba(33, 33, 33, 1);
+    box-shadow: -6px 6px 10px 2px rgba(33,33,33,1);
+}
+
+.panel-body {
+  padding: 10px 100px 10px 100px;
+  font-family: "Raleway";
+  font-size: 17px;
+  text-align: justify;
+}
+.panel-body li{
+   padding: 10px 100px 10px 100px;
+  font-family: "Raleway";
+  font-size: 17px;
+  text-align: justify; 
+}
+
+.frase {
+    color: #000;
+    padding: 3px 0px 3px 275px;
+    font-family: "Raleway";
+    font-size: 27px;
+    text-align: center;
+    color: #194059;
+}
+
+
+/*-------------------------
+ 2. Más Infomacion
+----------------------------*/
+
+.about-area-nosotros {
+    padding-top: 40px;
+    background: url("..") right 0px top 0px no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    position: relative;
+    -webkit-animation-name: izquierda;
+    -webkit-animation-duration: 4s;
+    animation-name: izquierda;
+    animation-duration: 4s;
+}
+
+
+
+/*----------------------------------------
+     3.ANUNCIO
+    ----------------------------------------*/
+
+.testimonials-area-nosotros {
+    background: url("../img/Nosotros/Bytetics2.jpg") no-repeat fixed center top / cover;
+    height: auto;
+    width: 100%;
+}
+
+.testi-text h3 {
+    color: #72DBED;
+    font-size: 30px;
+}
+.testi-text p {
+    color: #fff;
+    font-family: Raleway Light;
+    font-size: 19px;
+    line-height: 1.5em;
+    margin: 20px 0;
+    letter-spacing: 1px;
+}
+
+/*----------------------------------------
+     4.Nuestro Equipo
+----------------------------------------*/
+#team{
+    background: rgba(114,219,237, .1);
+}
+
+.team{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.team .team-img {
+    overflow: visible;
+    position: relative;
+    margin: 0;
+    border: 8px outset #194059;
+    border-radius: 5px;
+}
+
+.team .team-img:hover img {
+    opacity: 0.5;
+    transition: 1s;
+    border-radius: 5px 15%;
+}
+
+.team .team-img:hover {
+  background: #194052;
+  border-radius: 5px 15%;
+
+}
+
+.team .team-img:hover .team-info {
+  opacity: 1;
+
+}
+
+.team-info {
+    font-size: 16px;
+}
+
+.img-nosotros{
+    border-radius: 50%;
+}
+
+.team-social-icon {
+    left: 50%;
+    margin-left: -61px;
+    opacity: 0;
+    position: absolute;
+    top: 40%;
+    transition: 1.3s;
+}
+
+.team-social-icon ul li {
+    display: inline-block;
+}
+
+.team-social-icon ul li a {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    display: block;
+    font-size: 25px;
+    height: 35px;
+    line-height: 35px;
+    margin: 0 3px;
+    width: 35px;
+}
+
+.team-social-icon ul li a:hover {
+    color: #72dbed;
+    background: #212121;
+}
+
+.team-content>h4 {
+    padding-top: 10px;
+    color: #194052;
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+/*--------------------------------
+      5. Lista de Servicios
+--------------------------------*/
+
+.reviews-area { 
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.work-us{
+    background: #194052 none repeat scroll 0 0;
+    width: 50%;
+}
+
+.work-right-text {
+    background: #212121 none repeat scroll 0 0;
+    opacity: 0.8;
+    height: auto;
+    overflow: hidden;
+    padding: 30px 0;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.work-right-text h2 {
+    color: #fff;
+    font-size: 24px;
+}
+.text-list{
+    text-align: left;
+    padding-left: 30%;
+}
+.text-list li a{
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 34px;
+}
+
+.work-right-text .sus-btn {
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+.single-awesome-4 {
+    display: block;
+    float: left;
+    overflow: hidden;
+    width: 33.33%;
+}
+
+.single-awesome-4 .add-actions {
+    padding: 10px 20px;
+}

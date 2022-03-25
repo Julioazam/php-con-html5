@@ -1,0 +1,320 @@
+/*-----------------------------------------------------------------------------------
+   CSS CONTACTO
+  ===================
+
+  1. Mapa
+  2. Área del formulario de email
+  3. Responsive
+ 
+/*****************************
+    Sección de Contacto
+******************************/
+
+
+/*********************************
+1. Google Map
+*********************************/
+
+#google_map
+{
+    width: 100%;
+    height: 832px;
+    margin-top: 117px;
+}
+
+/*---------------------------------------------*/
+input {
+    outline: none;
+    border: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
+
+input::-webkit-input-placeholder {color: #cccccc;}
+input:-moz-placeholder {color: #cccccc;}
+input::-moz-placeholder {color: #cccccc;}
+input:-ms-input-placeholder {color: #cccccc;}
+
+textarea::-webkit-input-placeholder {color: #cccccc;}
+textarea:-moz-placeholder {color: #cccccc;}
+textarea::-moz-placeholder {color: #cccccc;}
+textarea:-ms-input-placeholder {color: #cccccc;}
+
+/*---------------------------------------------*/
+button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+iframe {
+    border: none !important;
+}
+
+.row {
+    margin-right: 10px;
+    margin-left: -15px;
+}
+.container-contact100 {
+  width: 100%;  
+  min-height: 100vh;  
+  /*display: -moz-box;*/
+  /*display: -ms-flexbox;*/
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  background: transparent;
+  position: relative;
+}
+
+.contact100-map {
+  border: 15px solid #194052;
+  border-radius: 20px 20px;
+  position: absolute;
+  /*z-index: -2;*/
+  width: calc(100% - 640px);
+  height: 100%;
+  top: -60px;
+  left: 60px;
+}
+
+
+/***** 2. Área de formulario de email ******/
+
+.wrap-contact100 {
+  width: 640px;
+  min-height: 100vh;
+  background: #fff;
+  border-radius: 2px;
+  padding: 82px 55px 33px 55px;
+  position: relative;
+}
+
+.contact100-form {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 68px;
+}
+
+.contact100-form-title {
+  display: block;
+  width: 100%;
+  font-family: Raleway Medium;
+  font-size: 39px;
+  color: #212121;
+  line-height: 1.2;
+  text-align: left;
+  padding-bottom: 64px;
+}
+
+
+.wrap-input100 {
+  width: 100%;
+  position: relative;
+  border-bottom: 2px solid #194052;
+  margin-bottom: 45px;
+}
+
+.label-input100 {
+  font-family: Raleway;
+  font-size: 18px;
+  color: #212121;
+  line-height: 1.2;
+  padding-left: 2px;
+}
+
+.input100 {
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-family: Raleway;
+  font-size: 22px;
+  color: #212121;
+  line-height: 1.2;
+  padding: 0 2px;
+}
+
+.focus-input100 {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input100::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #72dbed;
+}
+
+
+/*---------------------------------------------*/
+input.input100 {
+  height: 50px;
+}
+
+
+textarea.input100 {
+  min-height: 140px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
+
+.input100:focus + .focus-input100::before {
+  width: 100%;
+}
+
+.has-val.input100 + .focus-input100::before {
+  width: 100%;
+}
+
+
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-contact100-form-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wrap-contact100-form-btn {
+  display: block;
+  position: relative;
+  z-index: 1;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.contact100-form-bgbtn {
+  position: absolute;
+  z-index: -1;
+  width: 300%;
+  height: 100%;
+  background: #212121;
+  background: #72dbed;
+  top: 0;
+  left: -100%;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  min-width: 244px;
+  height: 50px;
+
+  font-family: Raleway Medium;
+  font-size: 16px;
+  color: #212121;
+  line-height: 1.2;
+}
+
+.wrap-contact100-form-btn:hover .contact100-form-bgbtn {
+  left: 0;
+}
+
+
+/*------------------------------------------------------------------
+[ 3. Responsive ]*/
+
+
+@media (max-width: 576px) {
+  .wrap-contact100 {
+    padding: 82px 15px 33px 15px;
+  }
+}
+
+
+/*------------------------------------------------------------------
+[ Alert validate ]*/
+
+.validate-input {
+  position: relative;
+}
+
+@media (max-width: 1200px) {
+  .wrap-contact100 {
+    width: 440px;
+  }
+
+  .contact100-map {
+    width: calc(100% - 440px);
+  }
+
+  .contact100-more {
+    left: calc((100% - 440px) / 2);
+  }
+}
+
+@media (max-width: 768px) {
+  .wrap-contact100 {
+    width: 100%;
+  }
+
+  .contact100-map {
+    display: none;
+  }
+
+

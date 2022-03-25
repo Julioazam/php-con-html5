@@ -1,0 +1,18 @@
+
+Options +FollowSymLinks
+RewriteEngine on
+
+#Errores
+ErrorDocument 404 /ByteTICs/vistas/error/404.html
+
+# Redirect 301 /ByteTICs/vistas/index.php http://localhost/ByteTICs redirecionamiento de seo
+# 
+
+
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteCond %{SCRIPT_FILENAME} !-f 
+RewriteCond %{REQEST_FILENAME}.php !-f
+
+# RewriteRule ^([a-zA-Z0-9]+)$ contacto.php?contactanos=$1
+RewriteRule ^(.+)$ index.php?url=$1 [QSA,L]
+

@@ -1,0 +1,434 @@
+/*-----------------------------------------------------------------------------------
+   CSS SERVICIOS
+  ===================
+
+1.Nuestros Servicios
+2. Àrea del Carousel Inferior
+3. Tablas de precios
+
+-----------------------------------------------------------------------------------*/
+
+
+
+.testimonials-area-services {    
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.services-web{
+  background:  url("../img/servicios/compus.png");
+  background-size: 120% 110%;
+  background-attachment: fixed;
+}
+
+.services-db{
+  background:  url("../img/slider/Im3.png");
+  background-size: 120% 110%;
+  background-attachment: fixed;
+}
+
+.services-mantenimiento{
+  background:  url("../img/servicios/mantenimiento.png");
+  background-size: 120% 110%;
+  background-attachment: fixed;
+}
+
+.services-marketing{
+  background:  url("../img/slider/Im2.png");
+  background-size: 120% 110%;
+  background-attachment: fixed;
+}
+
+.services-nosotros{
+  background:  url("../img/Nosotros/union.png");
+  background-size: 120% 110%;
+  background-attachment: fixed;
+}
+
+.services-contacto{
+  background:  url("../img/contacto/contacto.jpg");
+  background-size: 120% 110%;
+  background-attachment: fixed;
+}
+
+.testi-inner-services {
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+.testi-overly-services {
+
+    background: rgba(33, 33, 33, .6) none repeat scroll 0 0;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+
+.testi-text-services h6 {
+    color: #72dbed;
+    font-family: Raleway Light;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1;
+
+}
+
+/*----------------------------------------
+ 1.CSS MARKETING
+----------------------------------------*/
+
+.portfolio-marketing {
+    padding-top: 40px;
+    background: url('../img/servicios/') right 0px top 0px no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/*****Servicios marketing****/
+ .project-dec span li{
+    
+    text-align: left;
+  }
+
+
+/****Tablas de precios Marketing****/
+.section-headli{
+color: #333;
+}
+
+.pricing-area {
+  background: rgba(0, 0, 0, 0.02) none repeat scroll 0 0;
+}
+
+.pack_table_list {
+  border: 1px solid #000;
+  text-align: center;
+  transition: all 0.4s ease 0s;
+  background: #fff;
+  border-radius: 0%;
+}
+
+.pack_table_list h3 span {
+  font-size: 16px;
+}
+
+.pack_table_list ol li {
+  border-bottom: 1px solid #72dbed;
+  color: #194052;
+  padding: 12px 15px;
+  position: relative;
+  text-align: left;
+}
+
+.pack_table_list li.check.cross::after {
+  content: "\f00d";
+  font-family: fontawesome;
+  font-size: 14px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  color: indianred;
+}
+
+.pack_table_list li.check::after {
+  content: "\f00c";
+  font-family: fontawesome;
+  font-size: 14px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  color: #72dbed;
+}
+
+.pack_table_list button {
+  background: #444 none repeat scroll 0 0;
+  border: 1px solid #444;
+  color: #fff;
+  margin-bottom: 25px;
+  padding: 10px 35px;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+  border-radius: 30px;
+}
+
+.pack_table_list>h3 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  padding: 30px 0 20px;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+}
+
+.pack_table_list ol {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0 0 25px;
+}
+
+.pack_table_list.active {
+  transition: all 0.4s ease 0s;
+  position: relative;
+  overflow: hidden;
+}
+
+.pack_table_list>button:hover {
+  background-color: #fff;
+  border: 1px solid #333;
+  color: #333;
+}
+/*Fin de tablas de marketing*/
+
+/*Redes sociales marketing*/
+#portadamark {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#portadamark .marketing {
+    width: 100%;    
+    background: linear-gradient(to bottom, rgba(114, 219, 237, 0.1) 40%, rgba(25, 64, 82, 0.5) 140%), url("../img/servicios/fondo1.jpg");
+    background-size: 110% 125%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+#portadamark .container {
+    height: 100% !important;
+}
+
+.testi-textmark{
+  position: relative;
+  margin-top:50px;
+ text-align: center;
+ margin-bottom: 50px;
+}
+
+
+
+
+/******CSS WEB*******/
+
+/*Servicios web*/
+.portfolio-web {
+    padding-top: 40px;
+    background: url('../public/servicios/img/imgdigital.jpg') right 0px top 0px no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+
+/*Tablas de precios web*/
+
+.section-headweb{
+color: #333;
+}
+
+.pricing-area {
+  background: rgba(0, 0, 0, 0.04) none repeat scroll 0 0;
+}
+
+.web_table_list {
+  border: 1px solid #194952;
+  text-align: center;
+  transition: all 0.4s ease 0s;
+  background: #fff;
+  border-radius: 0%;
+}
+
+.web_table_list h3 span {
+  font-size: 16px;
+}
+
+.web_table_list ol li {
+  border-bottom: 1px solid #72dbed;
+  color: #000;
+  padding: 12px 15px;
+  position: relative;
+  text-align: left;
+}
+
+.web_table_list li.check.cross::after {
+  content: "\f00d";
+  font-family: fontawesome;
+  font-size: 14px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  color: indianred;
+}
+
+.web_table_list li.check::after {
+  content: "\f00c";
+  font-family: fontawesome;
+  font-size: 14px;
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  color: #72dbed;
+}
+
+.web_table_list button {
+  background: #000 none repeat scroll 0 0;
+  border: 1px solid #444;
+  color: #fff;
+  margin-bottom: 25px;
+  padding: 10px 35px;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+  border-radius: 30px;
+}
+
+.web_table_list>h3 {
+  color: #333;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 25px;
+  padding: 30px 0 20px;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+}
+
+.web_table_list ol {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0 0 25px;
+}
+
+.web_table_list.active {
+  transition: all 0.4s ease 0s;
+  position: relative;
+  overflow: hidden;
+}
+
+.web_table_list>button:hover {
+  background-color: #fff;
+  border: 1px solid #333;
+  color: #333;
+}
+
+
+
+.active>h3 {
+  background: #194052 none repeat scroll 0 0;
+  color: #fff;
+  font-family: Raleway;
+  transition: all 0.4s ease 0s;
+}
+
+.active>h3 span{
+color: #72dbed;
+}
+
+.active>button {
+  background: #72dbed none repeat scroll 0 0;
+  border: 1px solid #194052;
+  color: #194052;
+  transition: 0.4s;
+}
+
+.active>button:hover {
+  background: #194052 none repeat scroll 0 0;
+  border: 3px solid #72dbed;
+  color: #fff;
+  transition: 0.4s;
+}
+
+
+/*Fin tablas de precios web*/
+
+
+/*Exelencia digital*/
+.suscribe-area {
+    background: #72dbed none repeat scroll 0 0;
+    padding: 30px 0;
+}
+
+.suscribe-text {
+    display: block;
+    padding: 10px 0;
+}
+
+.suscribe-text h3 {
+    color: #fff;
+    font-family: Raleway Medium;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.sus-btn {
+    background: #fff none repeat scroll 0 0;
+    border: 2px solid #333;
+    color: #72dbed;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 100px;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 30px;
+}
+
+.sus-btn:hover {
+    background: #194052 none repeat scroll 0 0;
+    border: 2px solid #212121;
+    color: #fff;
+}
+/*Fin exelencia digital*/
+
+
+
+/*--------------------------------------
+ .End CSS
+----------------------------------------*/
+
+
+@media (max-width: 767px) {
+
+  .testi-text-services h6 {
+    color: #72dbed;
+    font-family: Raleway Light;
+    font-size: 26px;
+    /*font-weight 400;*/
+  }
+
+  
+}
+
+
+@media (min-width: 330px) and (max-width: 469px) {
+  .testimonials-area-services {    
+    width: 100%;
+    height: 80vh;
+}
+  .testi-text-services h6 {
+    color: #72dbed;
+    font-family: Raleway Light;
+    font-size: 16px;
+    /*font-weight 400;*/
+  }
+
+}
+
+/* Large Mobile :480px. */
